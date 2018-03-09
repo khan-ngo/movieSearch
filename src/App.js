@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import logo from './images/reel.png';
 import './App.css';
-import './Style/flatly.min.css';
+import './style/flatly.min.css';
 import './main';
 import ReactDOM from 'react-dom';
-
+import 'datatables';
+import 'sorttable';
 
 class App extends Component {
   render() {
@@ -20,18 +21,35 @@ class App extends Component {
 
           <div className="container">
               <div className="jumbotron">
-                  <h3 className="text-center">Enter Key Word for the Movie you want to search</h3>
+                  <h3 className="text-center">Search for movies in IMDb</h3>
                   <form id="searchForm">
-                      <input type="text" className="form-control" id="searchText" placeholder="Search Movies..." />
+                      <input type="text" className="form-control" id="searchString" placeholder="Type in Your Search ..." />
+                      <br></br>
+                      <button type="submit" className="btn btn-primary">Submit</button>
+
                   </form>
               </div>
           </div>
 
           <div className="container">
-              <div id="movies" className="row"></div>
+
+              <table className="table table-hover sortable" cellSpacing="0" width="100%">
+                  <thead className="table-primary">
+                  <tr>
+                      <td>Title</td>
+                      <td>Year</td>
+                      <td>Type</td>
+                      <td></td>
+                  </tr>
+                  </thead>
+
+                  <tbody id="movies" className="table-hover">
+                  </tbody>
+              </table>
+
           </div>
-              <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-              <script src="main.js"></script>
+
+
           </div>
       </div>
     );
