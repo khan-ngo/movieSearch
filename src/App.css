@@ -27,24 +27,26 @@
   to { transform: rotate(360deg); }
 }
 
-#movies img, #movie img{
-    width:100%;
-}
-
-@media(min-width:960px){
-    #movies .col-md-3 .well{
-        height: 390px;
-    }
-
-    #movies .col-md-3 img{
-        height:240px;
-    }
-}
-
 /* Sortable tables */
 table.sortable thead {
     background-color:#eee;
     color:#666666;
     font-weight: bold;
     cursor: default;
+}
+
+.metaInfo {
+    padding-top: 5px;
+}
+
+.list-group {
+    padding: 15px 0 0 50px;
+    alignment: justify;
+    text-align: left;
+}
+
+#backButton {
+    margin: 10px;
+    alignment: center;
+
 }

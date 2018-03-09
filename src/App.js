@@ -3,8 +3,6 @@ import logo from './images/reel.png';
 import './App.css';
 import './style/flatly.min.css';
 import './main';
-import ReactDOM from 'react-dom';
-import 'datatables';
 import 'sorttable';
 
 class App extends Component {
@@ -17,16 +15,15 @@ class App extends Component {
           <h1 className="App-title" href="app.js">Movie Search</h1>
         </header>
 
-          <div>
+          <div id="searchArea">
 
-          <div className="container">
+          <div id='jumbotron' className="container">
               <div className="jumbotron">
                   <h3 className="text-center">Search for movies in IMDb</h3>
                   <form id="searchForm">
                       <input type="text" className="form-control" id="searchString" placeholder="Type in Your Search ..." />
                       <br></br>
                       <button type="submit" className="btn btn-primary">Submit</button>
-
                   </form>
               </div>
           </div>
@@ -42,20 +39,17 @@ class App extends Component {
                       <td></td>
                   </tr>
                   </thead>
-
                   <tbody id="movies" className="table-hover">
                   </tbody>
               </table>
-
           </div>
-
-
           </div>
+          <div id="movieInfo"></div>
+
       </div>
     );
   }
 }
 
-ReactDOM.render(<main />, document.getElementById('root'));
 
 export default App;
