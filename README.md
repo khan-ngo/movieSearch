@@ -26,7 +26,7 @@ I have been tasked with creating a simple web app that will utilize a common API
 
 
 ## Wireframe
-![picture](src/images/wireferame.png)
+![picture](src/images/wireframe.png)
 
 ## Build Instructions
 1) obtaining this repository from github
