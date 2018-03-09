@@ -33,7 +33,7 @@ class App extends Component {
 
           <div className="container">
 
-              <table id="table" className="table table-hover sortable" cellSpacing="0" width="100%">
+              <table className="table table-hover sortable" cellSpacing="0" width="100%">
                   <thead className="table-primary">
                   <tr>
                       <td>Title</td>
