@@ -1,16 +1,16 @@
 {
-  "name": "movieSearch",
+  "name": "moviesearch",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
     "babel": "^6.23.0",
-    "bootstrap": "^4.0.0",
-    "bootswatch": "^4.0.0",
-    "datatables": "^1.10.13",
-    "jquery": "^3.3.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "bootstrap": "^4.3.1",
+    "bootswatch": "^4.3.1",
+    "datatables": "^1.10.18",
+    "jquery": "^3.4.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-scripts": "1.1.1",
     "sortable": "^2.0.0",
     "sorttable": "^1.0.2"
@@ -20,5 +20,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "I have been tasked with creating a simple web app that will utilize a common API to retrieve and resent data in a meaningful way.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kqngo/movieSearch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kqngo/movieSearch/issues"
+  },
+  "homepage": "https://github.com/kqngo/movieSearch#readme"
 }
